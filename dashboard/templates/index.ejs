@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="shortcut icon" href="https://i.imgur.com/phunlbC.gif" style="border-radius: 80px;" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Vapor - Home</title>
+</head>
+<body>
+<%- include("partials/header", { bot, user, path, }) %>
+<center>
+  <br>
+  <img src="https://i.imgur.com/phunlbC.gif" style="width: 260px; height: 260px;">
+  <br>
+  <br>
+  <br>
+<h1><i class="fa fa-smile-o"></i> Welcome to Vapor!</h1>
+<h5 style="color: rgb(94, 94, 94);"><i class="fa fa-certificate"></i> We are now verified by discord!, and moderating <%= bot.guilds.cache.size %> servers around <%= bot.shard.count %> shards!</h5>
+</center>
+<br>
+<br>
+<center>
+  <a style="width:350px;" style="margin-left: 50px" class="button" type="button" target="_blank" href="https://discord.com/oauth2/authorize?client_id=<%= bot.user.id %>&permissions=268438576&scope=bot"><i class="fa fa-tachometer"></i> Get Started</a>
+  <br>
+  <br>
+  <a style="width:200px;" style="margin-right: 50px" class="button" type="button" target="_blank" href="https://discord.gg/fmu4dEF"><i class="fa fa-users"></i> Support</a>
+  <br>
+  <br>
+  <script>
+    // Set the date we're counting down to
+    function openVote() {
+  document.getElementById("myvote").style.display = "block";
+}
+function closeVote() {
+  document.getElementById("myvote").style = "display: none;";
+}
+  </script>
+</center>
+<br>
+<br>
+<div class="left">
+<p><center><strong style="font-size: 40px; margin-right: 40px;"><i class="fa fa-newspaper-o"></i> Features</strong></center></p>
+</div>
+<div class="container">
+    <div class="card feautres">
+      <div class="container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Hammer_-_Noun_project_1306.svg/1088px-Hammer_-_Noun_project_1306.svg.png" style="width: 60px; height: 60px;">
+      <p><strong style="font-size: 30px;"> Auto Mod</strong></p>
+    </div>
+      <p style="color: rgb(197, 197, 197);">Anti-spam links/invites to have a better. successfully server without advertising!</p>
+    </div>
+    <div class="card feautres">
+      <div class="container">
+      <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/95457-200.png" style="width: 80px; height: 80px;">
+      <p><strong style="font-size: 30px;"> Dashboard</strong></p>
+    </div>
+      <p style="color: rgb(197, 197, 197);">To handle bot easier, cases, prefix ... , with a smooth website</p>
+    </div>
+    <div class="card feautres">
+      <div class="container">
+      <img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/sign-warning-icon.png" style="width: 60px; height: 60px;">
+      <p><strong style="font-size: 30px;"> Warn system</strong></p>
+    </div>
+      <p style="color: rgb(197, 197, 197);">Warn people if they did something wrong, with max warns if he got 3 warns he will get muted (amount changeable)</p>
+    </div>
+    <div class="card feautres">
+      <div class="container">
+      <img src="https://image.flaticon.com/icons/png/512/61/61457.png" style="width: 60px; height: 60px;">
+      <p><strong style="font-size: 30px;"> LockDown</strong></p>
+    </div>
+      <p style="color: rgb(197, 197, 197);">If you are in raid you can lockdown channel to stop talking in it, and start the moderate server!</p>
+    </div>
+    <div class="card feautres">
+      <div class="container">
+      <img src="https://waterinthewest.stanford.edu/groundwater/img/metrics/icons/icon_60089_log/icon_60089.png" style="width: 60px; height: 60px;">
+      <p><strong style="font-size: 30px;"> Logging</strong></p>
+    </div>
+      <p style="color: rgb(197, 197, 197);">Bot logs every action command executed like the ban, kick, soft ban and convert into cases to know all actions!</p>
+    </div>
+    <div class="card feautres">
+      <div class="container">
+      <img src="https://cdn1.iconfinder.com/data/icons/business-257/100/business-19-512.png" style="width: 60px; height: 60px;">
+      <p><strong style="font-size: 30px;"> Cases</strong></p>
+    </div>
+      <p style="color: rgb(197, 197, 197);">Making cases with command executer name, allegation, reason, action</p>
+    </div>
+    <div class="card feautres">
+      <div class="container">
+      <img src="https://cdn4.iconfinder.com/data/icons/onboarding-1/120/Formal_meeting_Copy-512.png" style="width: 60px; height: 60px;">
+      <p><strong style="font-size: 30px;"> Welcome Messages</strong></p>
+      </div>
+      <p style="color: rgb(197, 197, 197);">Send a welcome message when the member joins!</p>
+    </div>
+    <div class="card feautres">
+      <div class="container">
+      <img src="https://cdn1.iconfinder.com/data/icons/bigdata/128/Bigdata-44-512.png" style="width: 60px; height: 60px;">
+      <p><strong style="font-size: 30px;"> Audit Logs</strong></p>
+     </div>
+      <p style="color: rgb(197, 197, 197);">Send's a message to a specific channel on every update on guild!</p>
+    </div>
+    <div class="card feautres">
+      <div class="container">
+      <img src="https://cdn1.iconfinder.com/data/icons/basic-ui-elements-black-line/512/Basic_Design_5-05-512.png" style="width: 60px; height: 60px;">
+      <p><strong style="font-size: 30px;"> Auto Roles</strong></p>
+    </div>
+      <p style="color: rgb(197, 197, 197);">Give roles to the user when he/she joins the server!</p>
+    </div>
+    <div class="card feautres">
+      <div class="container">
+      <img src="https://static.thenounproject.com/png/565717-200.png" style="width: 60px; height: 60px;">
+      <p><strong style="font-size: 30px;"> Leave Messages</strong></p>
+    </div>
+      <p style="color: rgb(197, 197, 197);">Send a leave message when the member leave!</p>
+    </div>
+    <div class="card feautres">
+      <div class="container">
+      <img src="https://cdn2.iconfinder.com/data/icons/antivirus-internet-security/33/anti_spam-512.png" style="width: 60px; height: 60px;">
+     <br>
+     <br>
+      <p><strong style="font-size: 30px;">  Anti Raid</strong></p>
+    </div>
+      <p style="color: rgb(197, 197, 197);">Locks servers , means no one can join will server in anti raid mode!</p>
+    </div>
+  </div>
+<p style="color: red; text-align: center;">Inviting bot for jokes , troll , abuse us(will lead to auto leave bot + get blacklisted)</p>
+<center>
+  <hr style="margin-left: 300px; margin-right: 300px;">
+  <h1><i class="fa fa-users"></i> Staff Members</h1>
+  <div class="container">
+  <div class="card team">
+    <img src="https://cdn.discordapp.com/avatars/514067178514022403/a_1ff14278a4a7c4f4ea3b77c64242c32a.gif" style="width: 120px; height: 120px; border-radius: 70px;">
+    <p><strong style="font-size: 30px;">Dexter</strong></p>
+    <p style="font-size: 15px;"><strong>Main developer/creater , Founder.</strong></p>
+    <p>Javacript / c# programmer this website one of his works!</p>
+    <a target="_blank" href="https://discord.com/users/514067178514022403"><img src="https://discordapp.com/assets/e7a3b51fdac2aa5ec71975d257d5c405.png" style="width: 150px; height: 50px;"></a>
+  </div>
+  <div class="card team">
+    <img src="https://cdn.discordapp.com/avatars/496678696011300874/a_a8644d0bf635eaaedfc2ddb79ea3d7ae.gif" style="width: 120px; height: 120px; border-radius: 70px;">
+    <p><strong style="font-size: 30px;">FrostY</strong></p>
+    <p style="font-size: 15px;"><strong>Co-founder.</strong></p>
+    <p>Very important guy , bot stands with him!</p>
+    <br>
+    <a target="_blank" href="https://discord.com/users/496678696011300874"><img src="https://discordapp.com/assets/e7a3b51fdac2aa5ec71975d257d5c405.png" style="width: 150px; height: 50px;"></a>
+  </div>
+</div>
+<br>
+<a style="width:150px;" class="button" type="button" target="_blank" href="/bug"><i class="fa fa-bug"></i> Report Bug</a>
+</center>
+<br>
+<%- include("partials/footer") %>
+</body>
+</html>
